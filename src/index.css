@@ -1,0 +1,20 @@
+.journal {
+  width: 100vw;
+  height: 100vh;
+  background: #beb098;
+  color: #6e604d;
+  display: flex;
+}
+
+.left-page {
+  width: 50%;
+  height: 100%;
+  box-shadow: inset -5px 0px 5px;
+  border: 1px solid black;
+}
+
+.right-page {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+}
