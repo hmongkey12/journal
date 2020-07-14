@@ -1,20 +1,40 @@
+@font-face {
+  font-family: "Cedarville Cursive";
+  src: url("./fonts/Cedarville-Cursive.woff2") format("woff2"),
+    url("./fonts/Cedarville-Cursive.woff") format("woff"),
+    url("./fonts/Cedarville-Cursive.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.wrapper {
+  font-family: "Cedarville Cursive", sans-serif, Arial, Helvetica;
+  padding: 5% 5%;
+  width: 90vw;
+  height: 90vh;
+}
+
 .journal {
-  width: 100vw;
-  height: 100vh;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  background: #514029;
+}
+
+.page {
+  width: 50%;
+  height: 100%;
   background: #beb098;
   color: #6e604d;
-  display: flex;
 }
 
-.left-page {
-  width: 50%;
-  height: 100%;
-  box-shadow: inset -5px 0px 5px;
-  border: 1px solid black;
+.page.left-page {
+  box-shadow: inset -10px 0px 10px, 5px 5px 5px;
+  border-top-right-radius: 50px 15px;
+  border-bottom-right-radius: 50px 10px;
 }
 
-.right-page {
-  width: 50%;
-  height: 100%;
-  border: 1px solid black;
+.page.right-page {
+  border-top-left-radius: 50px 15px;
+  border-bottom-left-radius: 50px 10px;
+  box-shadow: inset 5px 0px 10px, 5px 5px 5px;
 }
